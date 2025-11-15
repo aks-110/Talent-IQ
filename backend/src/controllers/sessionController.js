@@ -76,7 +76,7 @@ export async function getMyRecentSessions(req, res) {
 
     // get sessions where user is either host or participant
     const sessions = await Session.find({
-      status: completed,
+      status: "completed",
       $or: [{ host: userId }, { participant: userId }],
     })
       .sort({ createdAt: -1 })
@@ -141,7 +141,7 @@ export async function endSession(req, res) {
 
     // check if user is the host
     if (session.host.toString() !== userId.toString()) {
-      res
+      return res
         .status(403)
         .json({ msg: "You are not authorized to end this session" });
     }
