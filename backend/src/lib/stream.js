@@ -23,11 +23,10 @@ export const upsertStreamUser = async (userData) => {
 export const deleteStreamUser = async (userId) => {
   try {
     await chatClient.deleteUser(userId);
-    console.log("Stream user deleted successfully");
+    console.log("Stream user deleted successfully", userId);
   } catch (error) {
     console.error("Error deleting the Stream user: ", error);
   }
 };
-
 
 // todo add another method to generateToken
