@@ -21,12 +21,12 @@ function HomePage() {
             to="/"
             className="flex items-center gap-3 hover:scale-105 transition-all duration-200"
           >
-            <div className="size-10 rounded-xl bg-linear-to-br from-purple-500 via-pink-500 to-blue-500 flex items-center justify-center shadow-lg">
+            <div className="size-10 rounded-xl bg-gradient-to-br from-purple-500 via-pink-500 to-blue-500 flex items-center justify-center shadow-lg">
               <SparklesIcon className="size-6 text-white" />
             </div>
 
             <div className="flex flex-col">
-              <span className="font-extrabold text-xl bg-linear-to-r from-purple-400 via-pink-500 to-blue-500 bg-clip-text text-transparent tracking-wide">
+              <span className="font-extrabold text-xl bg-gradient-to-r from-purple-400 via-pink-500 to-blue-500 bg-clip-text text-transparent tracking-wide">
                 Talent IQ
               </span>
               <span className="text-xs text-gray-400">Code Together</span>
@@ -35,7 +35,7 @@ function HomePage() {
 
           {/* CTA */}
           <SignInButton mode="modal">
-            <button className="group px-6 py-3 bg-linear-to-r from-purple-500 to-blue-500 rounded-xl text-white font-semibold text-sm hover:scale-110 hover:shadow-xl transition-all flex items-center gap-2">
+            <button className="group px-6 py-3 bg-gradient-to-r from-purple-500 to-blue-500 rounded-xl text-white font-semibold text-sm hover:scale-110 hover:shadow-xl transition-all flex items-center gap-2">
               <span>Get Started</span>
               <ArrowRightIcon className="size-4 group-hover:translate-x-1 transition-transform" />
             </button>
@@ -54,7 +54,7 @@ function HomePage() {
             </div>
 
             <h1 className="text-5xl lg:text-7xl font-black leading-tight">
-              <span className="bg-linear-to-r from-purple-400 via-pink-500 to-blue-500 bg-clip-text text-transparent drop-shadow-md">
+              <span className="bg-gradient-to-r from-purple-400 via-pink-500 to-blue-500 bg-clip-text text-transparent drop-shadow-md">
                 Code Together,
               </span>
               <br />
@@ -88,7 +88,7 @@ function HomePage() {
             {/* CTA Buttons */}
             <div className="flex flex-wrap gap-4">
               <SignInButton mode="modal">
-                <button className="px-6 py-3 bg-linear-to-r from-purple-600 to-blue-600 rounded-xl text-white font-semibold shadow-lg hover:scale-105 transition-all">
+                <button className="px-6 py-3 bg-gradient-to-r from-purple-600 to-blue-600 rounded-xl text-white font-semibold shadow-lg hover:scale-105 transition-all">
                   Start Coding
                 </button>
               </SignInButton>
@@ -110,7 +110,7 @@ function HomePage() {
                   key={i}
                   className="p-6 bg-black/20 rounded-2xl border border-white/20 text-center shadow-xl hover:scale-105 transition-all"
                 >
-                  <div className="text-3xl font-bold bg-linear-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
+                  <div className="text-3xl font-bold bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
                     {value}
                   </div>
                   <div className="text-gray-400 text-sm">{title}</div>
@@ -121,7 +121,7 @@ function HomePage() {
 
           {/* RIGHT IMAGE */}
           <div className="relative group">
-            <div className="absolute inset-0 bg-linear-to-r from-purple-500/20 to-blue-500/20 blur-3xl rounded-3xl opacity-50 group-hover:opacity-70 transition-all"></div>
+            <div className="absolute inset-0 bg-gradient-to-r from-purple-500/20 to-blue-500/20 blur-3xl rounded-3xl opacity-50 group-hover:opacity-70 transition-all"></div>
 
             <img
               src="/hero.png"
@@ -137,7 +137,7 @@ function HomePage() {
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold">
             Everything You Need to{" "}
-            <span className="bg-linear-to-r from-purple-400 to-blue-500 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-purple-400 to-blue-500 bg-clip-text text-transparent">
               Succeed
             </span>
           </h2>
