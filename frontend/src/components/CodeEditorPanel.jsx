@@ -10,12 +10,20 @@ function CodeEditorPanel({
   onCodeChange,
   onRunCode,
 }) {
+  const languageConfig = LANGUAGE_CONFIG[selectedLanguage];
+
+  if (!languageConfig) {
+    return (
+      <div className="h-full flex items-center justify-center bg-[#0e0e0f]">
+        <p className="text-white">Unsupported language: {selectedLanguage}</p>
+      </div>
+    );
+  }
+
   return (
     <div className="h-full flex flex-col bg-[#0e0e0f] border border-[#1f1f22] rounded-xl shadow-lg">
-
       {/* TOP TOOLBAR */}
       <div className="px-4 py-3 bg-[#141416] border-b border-[#232326] shadow-lg flex items-center justify-between rounded-t-xl">
-
         {/* LEFT SIDE */}
         <div className="flex items-center gap-4">
           <img

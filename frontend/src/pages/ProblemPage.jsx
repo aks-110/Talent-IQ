@@ -29,6 +29,13 @@ function ProblemPage() {
   // update problem when URL param changes
   useEffect(() => {
     if (id && PROBLEMS[id]) {
+      if (id) {
+        if (!PROBLEMS[id]) {
+          toast.error(`Problem "${id}" not found`);
+          navigate("/problems");
+          return;
+        }
+      }
       setCurrentProblemId(id);
       setCode(PROBLEMS[id].starterCode[selectedLanguage]);
       setOutput(null);
@@ -81,7 +88,7 @@ function ProblemPage() {
     const normalizedActual = normalizeOutput(actualOutput);
     const normalizedExpected = normalizeOutput(expectedOutput);
 
-    return normalizedActual == normalizedExpected;
+    return normalizedActual === normalizedExpected;
   };
 
   const handleRunCode = async () => {
