@@ -32,7 +32,7 @@ function ProblemPage() {
       if (id) {
         if (!PROBLEMS[id]) {
           toast.error(`Problem "${id}" not found`);
-          navigate("/problems");
+          navigate("/problems");  
           return;
         }
       }
