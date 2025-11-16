@@ -19,13 +19,13 @@ function ProblemsPage() {
   ).length;
 
   return (
-    <div className="min-h-screen bg-linear-to-br from-[#0f0f10] via-[#131419] to-[#0a0a0c] text-white">
+    <div className="min-h-screen bg-gradient-to-br from-[#0f0f10] via-[#131419] to-[#0a0a0c] text-white">
       <Navbar />
 
       <div className="max-w-6xl mx-auto px-4 py-12">
         {/* HEADER */}
         <div className="mb-10 text-center">
-          <h1 className="text-5xl font-extrabold bg-linear-to-r from-primary via-secondary to-accent bg-clip-text text-transparent drop-shadow-lg">
+          <h1 className="text-5xl font-extrabold bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent drop-shadow-lg">
             Practice Problems
           </h1>
           <p className="text-base-content/70 mt-2 text-lg">
