@@ -36,7 +36,7 @@ function HomePage() {
           {/* CTA */}
           <SignInButton mode="modal">
             <button className="group px-6 py-3 bg-gradient-to-r from-purple-500 to-blue-500 rounded-xl text-white font-semibold text-sm hover:scale-110 hover:shadow-xl transition-all flex items-center gap-2">
-              <span>Get Started</span>
+              <span>Lets Get Started</span>
               <ArrowRightIcon className="size-4 group-hover:translate-x-1 transition-transform" />
             </button>
           </SignInButton>
